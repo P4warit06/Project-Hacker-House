@@ -7,30 +7,65 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="dashboard">
-    <!-- User Profile Section -->
-    <div class="profile-section">
-          <h1 id="User">Welcome to the rewards program</h1>
-      <h2 id="profile">User Profile</h2>
-      <div class="profile-info">
-        <img src="Profile1.jpg" alt="User Profile Picture" class="profile-pic">
-        <p id="name"><strong>Name:</strong>  John Doe</p>
-        <p id="email"><strong> Email:</strong> john@example.com</p>
+  <div class="main">
+
+    <!-- Header-->
+  <div class="header">
+    <div class="header-left">
+      <h2>Logo</h2>
+    <h2>about</h2>
+    <h2>buy coin</h2>
+    <h2>exchange coin</h2>
+    </div>
+    
+    <div class="header-right">
+      <img src="/frontend/img/search.png" alt="User Profile Picture" class="search">
+    <h2 id="log_in">Log in</h2>
+    <h2 id="sign_up">sign up</h2>
+    <img src="/frontend/img/menu-burger.png" alt="User Profile Picture" class="menu-burger">
+    </div>
+
+  </div>
+
+    <div class="content">
+      <!-- User Profile Section -->
+      <div class="profile-section">
+        <img src="/frontend/img/Profile1.jpg" alt="User Profile Picture" class="profile-pic">
+        <h2 id="profile">User Profile</h2>
+        <div class="profile-info">
+          <p id="name"><strong>Name:</strong> John Doe</p>
+          <p id="email"><strong> Email:</strong> john@example.com</p>
+
+          <div class="Wallet">
+            <img src="/frontend/img/bitcoin.png" alt="bitcoin" id="bitcoin">
+            <p>Bitcoin</p>
+            <p>ckBTC</p>
+          </div>
+        </div>
       </div>
+
+      <div class="dashboard">
+          <div class="upper">
+            <p id="balance">balance: 5,000</p>
+          </div>
+          <div class="lower"></div>
+      </div>
+      
+    
     </div>
 
     <!-- Token Balance Section -->
-    <div class="token-section">
+    <!-- <div class="token-section">
       <h2>Token Balances</h2>
       <div class="token-balance">
         <p><strong>ckBTC:</strong> 2.5 BTC</p>
         <p><strong>ckETH:</strong> 1.2 ETH</p>
         <p><strong>ICP:</strong> 100 ICP</p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Rewards Status Section -->
-    <div class="rewards-section">
+    <!-- <div class="rewards-section">
       <h2>Reward Status</h2>
       <div class="reward-item">
         <p>Reward: 50 ICP</p>
@@ -41,7 +76,7 @@
         <p>Status: <span class="status-pending">Pending</span></p>
       </div>
     </div>
-  </div>
+  </div> -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,79 +1,142 @@
+/* Reset some basic styles */
 * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-          font-family: Arial, sans-serif;
-        }
-        
-        body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-          background-color: navy;
-        }
-        
-        .dashboard {
-          width: 100%;
-          height: 800px;
-          max-width: 1800px;
-          background: #fff;
-          padding: 50px;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        #profile {
-          font-size: 50px;
-        }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        h2 {
-          color: #333;
-          margin-bottom: 10px;
-        }
-        
-        .profile-section, .token-section, .rewards-section {
-          margin-bottom: 20px;
-          padding: 10px;
-          border-bottom: 1px solid #ddd;
-        }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
 
-        .h2
-        
-        .profile-info, .token-balance, .reward-item {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          
-        }
-        
-        .profile-pic {
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          margin-right: 15px;
-        }
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:fuchsia;
+  padding: 10px 20px;
+}
 
-        #name {
-          font-size: 20px;
-          color: #333;
-          margin-top: 10px;
-        }
-        
-        #email {
-          font-size: 20px;
-          color: #333;
-          margin-top: 5px;
-        }
-        
-        
-        .status-received {
-          color: green;
-          font-weight: bold;
-        }
-        
-        .status-pending {
-          color: orange;
-          font-weight: bold;
-        }
-        
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left h2, .header-right h2 {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header-left h2:hover, .header-right h2:hover {
+  color: #4CAF50;
+}
+
+.search {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.menu-burger{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#log_in {
+  background-color: #fff;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+#sign_up{
+  background-color: #fff;
+  width: 110px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+/* Content Section */
+.content {
+  display: inline-grid;
+  padding: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#profile {
+  font-size: 24px;
+  color: #333;
+}
+
+#name, #email {
+  font-size: 20px;
+}
+
+#bitcoin {
+  width: 30px;
+}
+
+.profile-info  {
+  color: #555;
+  
+}
+
+
+/* Dashboard Section */
+.dashboard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upper {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.lower {
+  /* Add styles for the lower part of the dashboard if needed */
+}
+
+/* Add additional sections (optional) */
+.token-section, .rewards-section {
+  margin-top: 30px;
+}
+
+.token-balance, .reward-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status-received {
+  color: green;
+}
+
+.status-pending {
+  color: orange;
+}
