@@ -1,12 +1,19 @@
-/* Reset styles */
+/* Reset some basic styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   
 }
+<<<<<<< HEAD
 body{
   font-family: Monospace;
+=======
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+>>>>>>> 52eed3a457e34a9c877686fcb20fe6a424e62cac
 }
 
 /* Header */
@@ -14,41 +21,58 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color:fuchsia;
   padding: 10px 20px;
 }
 
-.header-left h1,
-.header-left h2 {
-  color: #fff;
-  margin-right: 20px;
-  cursor: pointer;
-  display: inline-flex;
-}
-
-.header-right {
+.header-left, .header-right {
   display: flex;
   align-items: center;
 }
 
-.header-right button {
-  margin-left: 10px;
-  padding: 5px 10px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
+.header-left h2, .header-right h2 {
+  margin-right: 20px;
   cursor: pointer;
 }
 
-.header-right .icon {
-  margin-left: 10px;
+.header-left h2:hover, .header-right h2:hover {
+  color: #4CAF50;
+}
+
+.search {
   width: 30px;
   height: 30px;
+  margin-right: 50px;
   cursor: pointer;
+}
+
+.menu-burger{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#log_in {
+  background-color: #fff;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+#sign_up{
+  background-color: #fff;
+  width: 110px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
 }
 
 /* Content Section */
+/* Content Section */
 .content {
+<<<<<<< HEAD
   display: flex;
   justify-items: auto;
   
@@ -73,15 +97,27 @@ body{
 
 .left-section h2,p {
   font-size: 160%;
+=======
+  display: flex; /* ใช้ Flexbox เพื่อจัดการการแบ่งซ้าย-ขวา */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Profile Section (Left) */
+.profile-section {
+  width: 40%; /* ทำให้ฝั่งซ้าย (โปรไฟล์) กว้าง 45% */
+  margin-right: 20px; /* เพิ่มระยะห่างระหว่างฝั่งซ้ายและขวา */
+>>>>>>> 52eed3a457e34a9c877686fcb20fe6a424e62cac
 }
 
 .profile-pic {
-  width: 280px;
-  height: 280px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .crypto-row  {
   display: flex;
   align-items: center;
@@ -91,30 +127,75 @@ body{
 .bit-icon, .ck-icon {
   margin-right: 10px;
   margin-bottom: 5px;
+=======
+.Wallet {
+  display: flex; /* ใช้ Flexbox */
+  gap: 10px; /* ช่องว่างระหว่างไอคอนและข้อความ */
+  background-color: rgb(235, 156, 198);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#bitcoin {
+>>>>>>> 52eed3a457e34a9c877686fcb20fe6a424e62cac
   width: 30px;
+  height: 30px;
+}
+
+.Wallet p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
 }
 
 
+<<<<<<< HEAD
 /* Right Section */
 .right-section {
   width: 60%;
   margin-left: 20px;
   flex-grow: 7;
+=======
+/* Dashboard Section (Right) */
+.dashboard {
+  width: 50%; /* ทำให้ฝั่งขวากว้าง 50% */
+  display: flex;
+  flex-direction: column; /* ใช้ Flexbox เพื่อจัดการตำแหน่ง */
+>>>>>>> 52eed3a457e34a9c877686fcb20fe6a424e62cac
 }
 
-.main-dashboard h2 {
-  font-size: 40px;
+/* Upper part of dashboard */
+.upper {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px; /* ให้มีระยะห่างระหว่างส่วนบนและล่าง */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.exchange-history {
+/* Lower part of dashboard */
+.lower {
+  background-color: #fff;
+  padding: 30px; /* ขนาดใหญ่กว่าส่วนบน */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Add additional sections (optional) */
+.token-section, .rewards-section {
   margin-top: 30px;
 }
 
-.exchange-history h3 {
- font-size: 30px;
- margin-bottom: 20px;
+.token-balance, .reward-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 .exchange-item {
   display: inline-block;
   width: 30%;
@@ -179,4 +260,12 @@ body{
   background-color: white;
   border-radius: 100px;
   border-width: 1px;
+=======
+.status-received {
+  color: green;
+}
+
+.status-pending {
+  color: orange;
+>>>>>>> 52eed3a457e34a9c877686fcb20fe6a424e62cac
 }
