@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
-
-body {
-  font-family: Arial, sans-serif;
+body{
+  font-family: Monospace;
 }
 
 /* Header */
@@ -50,17 +50,29 @@ body {
 /* Content Section */
 .content {
   display: flex;
-  padding: 20px;
+  justify-items: auto;
+  
 }
 
 /* Left Section */
 .left-section {
-  width: 40%;
-  margin-left: 80px;
+  width: 20%;
+  margin: 60px;
+  margin-top: 50px;
+  flex-grow: 2;
+}
+
+#profile-name {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+#email{
+  margin: 10px 0 20px;
 }
 
 .left-section h2,p {
-  font-size: 20px;
+  font-size: 160%;
 }
 
 .profile-pic {
@@ -70,15 +82,15 @@ body {
   margin-bottom: 20px;
 }
 
-
-.crypto-row {
+.crypto-row  {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  
 }
 
 .bit-icon, .ck-icon {
   margin-right: 10px;
+  margin-bottom: 5px;
   width: 30px;
 }
 
@@ -86,6 +98,8 @@ body {
 /* Right Section */
 .right-section {
   width: 60%;
+  margin-left: 20px;
+  flex-grow: 7;
 }
 
 .main-dashboard h2 {
@@ -104,7 +118,7 @@ body {
 .exchange-item {
   display: inline-block;
   width: 30%;
-  margin-right: 10px;
+  flex-grow: 1;
   text-align: center;
   border-style: solid;
   border-radius: 13px;
@@ -153,6 +167,16 @@ body {
   margin-top: 5px;
 }
 
+.number-reward {
+  font-weight: bold;
+}
+
 #button {
-  
+  font-size: 20px;
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100px;
+  border-width: 1px;
 }

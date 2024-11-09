@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto Dashboard</title>
   <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
 
   <!-- ส่วนที่ 1: Header -->
@@ -30,19 +31,19 @@
     <!-- ฝั่งซ้าย -->
     <div class="left-section">
       <img src="/frontend/img/Profile1.jpg" alt="Profile Image" class="profile-pic">
-      <h2>Name: John Doe</h2>
-      <p>Email: john@example.com</p>
+      <h1 style="font-size: 250%;" id="profile-name">Esther</h1>
+      <p id="email"><strong>Email:</strong> john@example.com</p>
 
       <div class="crypto-row">
         <img src="/frontend/img/bitcoin.png" alt="Bitcoin" class="bit-icon">
         <p id="bitcoin"><strong>Bitcoin:</strong> 5000 BTU</p>
-    </div>
-    
-    <div class="crypto-row">
+      </div>
+
+      <div class="crypto-row">
         <img src="/frontend/img/01_ckBTC_Token_HEX__4x.webp" alt="ckBTC" class="ck-icon">
         <p id="ckbtc"><strong>ckBTC:</strong> 100000 BTU</p>
-    </div>
-    
+      </div>
+
     </div>
 
     <!-- ฝั่งขวา -->
@@ -76,41 +77,46 @@
     </div>
   </div>
 
+
   <!-- ส่วนที่ 3: สิ่งที่แลกได้ -->
   <div class="reward-section">
     <h3>What can be exchanged?</h3>
     <div class="rewards">
       <div class="reward-item">
         <img src="/frontend/img/rectangle_16012454.png" alt="Reward 1">
-        <p>Reward 1</p>
+        <p class="number-reward">Reward 1</p>
         <p>1000 BTU</p>
+        <button type="button" id="button">exchange</button>
       </div>
       <div class="reward-item">
         <img src="/frontend/img/rectangle_16012454.png" alt="Reward 2">
-        <p>Reward 2</p>
+        <p class="number-reward">Reward 2</p>
         <p>1500 BTU</p>
+        <button type="button" id="button">exchange</button>
       </div>
       <div class="reward-item">
         <img src="/frontend/img/rectangle_16012454.png" alt="Reward 3">
-        <p>Reward 3</p>
+        <p class="number-reward">Reward 3</p>
         <p>2000 BTU</p>
-        <button type="button" id="button">exchanged</button>
+        <button type="button" id="button">exchange</button>
       </div>
       <div class="reward-item">
         <img src="/frontend/img/rectangle_16012454.png" alt="Reward 4">
-        <p>Reward 4</p>
+        <p class="number-reward">Reward 4</p>
         <p>2500 BTU</p>
-        <button type="button" id="button">exchanged</button>
+        <button type="button" id="button">exchange</button>
       </div>
       <div class="reward-item">
         <img src="/frontend/img/rectangle_16012454.png" alt="Reward 5">
-        <p>Reward 5</p>
+        <p class="number-reward">Reward 5</p>
         <p>3000 BTU</p>
-        <button type="button" id="button">exchanged</button>
+        <button type="button" id="button">exchange</button>
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
