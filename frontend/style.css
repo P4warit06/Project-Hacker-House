@@ -64,61 +64,70 @@ body {
 }
 
 /* Content Section */
+/* Content Section */
 .content {
-  display: inline-grid;
+  display: flex; /* ใช้ Flexbox เพื่อจัดการการแบ่งซ้าย-ขวา */
+  justify-content: space-between;
   padding: 20px;
 }
 
-/* Profile Section */
+/* Profile Section (Left) */
 .profile-section {
-  align-items: center;
-  margin-bottom: 20px;
-  margin-left: 50px;
+  width: 40%; /* ทำให้ฝั่งซ้าย (โปรไฟล์) กว้าง 45% */
+  margin-right: 20px; /* เพิ่มระยะห่างระหว่างฝั่งซ้ายและขวา */
 }
 
 .profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-#profile {
-  font-size: 24px;
-  color: #333;
-}
-
-#name, #email {
-  font-size: 20px;
+.Wallet {
+  display: flex; /* ใช้ Flexbox */
+  gap: 10px; /* ช่องว่างระหว่างไอคอนและข้อความ */
+  background-color: rgb(235, 156, 198);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #bitcoin {
   width: 30px;
+  height: 30px;
 }
 
-.profile-info  {
-  color: #555;
-  
+.Wallet p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
 }
 
 
-/* Dashboard Section */
+/* Dashboard Section (Right) */
 .dashboard {
+  width: 50%; /* ทำให้ฝั่งขวากว้าง 50% */
+  display: flex;
+  flex-direction: column; /* ใช้ Flexbox เพื่อจัดการตำแหน่ง */
+}
+
+/* Upper part of dashboard */
+.upper {
   background-color: #fff;
   padding: 20px;
+  margin-bottom: 10px; /* ให้มีระยะห่างระหว่างส่วนบนและล่าง */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.upper {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #333;
+/* Lower part of dashboard */
+.lower {
+  background-color: #fff;
+  padding: 30px; /* ขนาดใหญ่กว่าส่วนบน */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.lower {
-  /* Add styles for the lower part of the dashboard if needed */
-}
 
 /* Add additional sections (optional) */
 .token-section, .rewards-section {
