@@ -3,114 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypto Dashboard</title>
+  <title>Rewards Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="main">
 
-  <!-- ส่วนที่ 1: Header -->
+    <!-- Header-->
   <div class="header">
     <div class="header-left">
-      <h1>Logo</h1>
-      <h2>About</h2>
-      <h2>Buy Coin</h2>
-      <h2>Exchange Coin</h2>
+      <h2>Logo</h2>
+    <h2>about</h2>
+    <h2>buy coin</h2>
+    <h2>exchange coin</h2>
     </div>
+    
     <div class="header-right">
-      <img src="/frontend/img/search.png" alt="Search Icon" class="icon">
-      <button id="log_in">Log In</button>
-      <button id="sign_up">Sign Up</button>
-      <img src="/frontend/img/globe.png" alt="Language Icon" class="icon">
-      <img src="/frontend/img/menu-burger.png" alt="Menu Icon" class="icon">
+      <img src="/frontend/img/search.png" alt="User Profile Picture" class="search">
+    <h2 id="log_in">Log in</h2>
+    <h2 id="sign_up">sign up</h2>
+    <img src="/frontend/img/menu-burger.png" alt="User Profile Picture" class="menu-burger">
     </div>
+
   </div>
 
-  <!-- ส่วนที่ 2: Content Section -->
-  <div class="content">
-    <!-- ฝั่งซ้าย -->
-    <div class="left-section">
-      <img src="/frontend/img/Profile1.jpg" alt="Profile Image" class="profile-pic">
-      <h2>Name: John Doe</h2>
-      <p>Email: john@example.com</p>
+    <div class="content">
+      <!-- User Profile Section -->
+      <div class="profile-section">
+        <img src="/frontend/img/Profile1.jpg" alt="User Profile Picture" class="profile-pic">
+        <h2 id="profile">User Profile</h2>
+        <div class="profile-info">
+          <p id="name"><strong>Name:</strong> John Doe</p>
+          <p id="email"><strong> Email:</strong> john@example.com</p>
 
-      <div class="crypto-row">
-        <img src="/frontend/img/bitcoin.png" alt="Bitcoin" class="bit-icon">
-        <p id="bitcoin"><strong>Bitcoin:</strong> 5000 BTU</p>
-    </div>
+          <div class="Wallet">
+            <img src="/frontend/img/bitcoin.png" alt="bitcoin" id="bitcoin">
+            <p><strong>Bitcoin:</strong> 8000 BTC</p> 
+            <img src="/frontend/img/01_ckBTC_Token_HEX__4x.webp" alt="bitcoin" id="bitcoin">
+            <p><strong>ckBTC:</strong> 500 BTC </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard">
+          <div class="upper">
+            <p id="balance">balance: 5,000</p>
+          </div>
+          <div class="lower"></div>
+      </div>
+      
     
-    <div class="crypto-row">
-        <img src="/frontend/img/01_ckBTC_Token_HEX__4x.webp" alt="ckBTC" class="ck-icon">
-        <p id="ckbtc"><strong>ckBTC:</strong> 100000 BTU</p>
-    </div>
-    
     </div>
 
-    <!-- ฝั่งขวา -->
-    <div class="right-section">
-      <div class="main-dashboard">
-        <h2>Main Dashboard</h2>
-        <p><strong>Current coins:</strong> 8000 BTU</p>
+    <!-- Token Balance Section -->
+    <!-- <div class="token-section">
+      <h2>Token Balances</h2>
+      <div class="token-balance">
+        <p><strong>ckBTC:</strong> 2.5 BTC</p>
+        <p><strong>ckETH:</strong> 1.2 ETH</p>
+        <p><strong>ICP:</strong> 100 ICP</p>
       </div>
+    </div> -->
 
-      <div class="exchange-history">
-        <h3>Coin exchange history</h3>
-        <div class="exchange-item">
-          <img src="/frontend/img/" alt="Exchange 1">
-          <p>Exchange Date: 01/11/2024</p>
-          <p>Amount: 1000 BTU</p>
-          <p>Exchange times: 1</p>
-        </div>
-        <div class="exchange-item">
-          <img src="/frontend/img/" alt="Exchange 2">
-          <p>Exchange Date: 01/12/2024</p>
-          <p>Amount: 2000 BTU</p>
-          <p>Exchange times: 2</p>
-        </div>
-        <div class="exchange-item">
-          <img src="/frontend/img/" alt="Exchange 3">
-          <p>Exchange Date: 01/01/2025</p>
-          <p>Amount: 3000 BTU</p>
-          <p>Exchange times: 3</p>
-        </div>
+    <!-- Rewards Status Section -->
+    <!-- <div class="rewards-section">
+      <h2>Reward Status</h2>
+      <div class="reward-item">
+        <p>Reward: 50 ICP</p>
+        <p>Status: <span class="status-received">Received</span></p>
+      </div>
+      <div class="reward-item">
+        <p>Reward: 0.5 ckBTC</p>
+        <p>Status: <span class="status-pending">Pending</span></p>
       </div>
     </div>
-  </div>
-
-  <!-- ส่วนที่ 3: สิ่งที่แลกได้ -->
-  <div class="reward-section">
-    <h3>What can be exchanged?</h3>
-    <div class="rewards">
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 1">
-        <p>Reward 1</p>
-        <p>1000 BTU</p>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 2">
-        <p>Reward 2</p>
-        <p>1500 BTU</p>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 3">
-        <p>Reward 3</p>
-        <p>2000 BTU</p>
-        <button type="button" id="button">exchanged</button>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 4">
-        <p>Reward 4</p>
-        <p>2500 BTU</p>
-        <button type="button" id="button">exchanged</button>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 5">
-        <p>Reward 5</p>
-        <p>3000 BTU</p>
-        <button type="button" id="button">exchanged</button>
-      </div>
-    </div>
-  </div>
-
+  </div> -->
   <script src="script.js"></script>
 </body>
 </html>
