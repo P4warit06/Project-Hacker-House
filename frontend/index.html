@@ -1,151 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewards Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rewards Dashboard</title>
-  <link rel="stylesheet" href="style.css">
-
-<body>
-  <div class="main">
-
-    <!-- Header-->
-  <div class="header">
-    <div class="header-left">
-      <h2>Logo</h2>
-    <h2>about</h2>
-    <h2>buy coin</h2>
-    <h2>exchange coin</h2>
-    </div>
-    
-    <div class="header-right">
-      <img src="/frontend/img/search.png" alt="User Profile Picture" class="search">
-    <h2 id="log_in">Log in</h2>
-    <h2 id="sign_up">sign up</h2>
-    <img src="/frontend/img/menu-burger.png" alt="User Profile Picture" class="menu-burger">
-    </div>
-
-  </div>
-
-<<<<<<< HEAD
-  <!-- ส่วนที่ 2: Content Section -->
-  <div class="content">
-    <!-- ฝั่งซ้าย -->
-    <div class="left-section">
-      <img src="/frontend/img/Profile1.jpg" alt="Profile Image" class="profile-pic">
-      <h1 style="font-size: 250%;" id="profile-name">Esther</h1>
-      <p id="email"><strong>Email:</strong> john@example.com</p>
-
-      <div class="crypto-row">
-        <img src="/frontend/img/bitcoin.png" alt="Bitcoin" class="bit-icon">
-        <p id="bitcoin"><strong>Bitcoin:</strong> 5000 BTU</p>
-      </div>
-
-      <div class="crypto-row">
-        <img src="/frontend/img/01_ckBTC_Token_HEX__4x.webp" alt="ckBTC" class="ck-icon">
-        <p id="ckbtc"><strong>ckBTC:</strong> 100000 BTU</p>
-      </div>
-
-=======
-    <div class="content">
-      <!-- User Profile Section -->
-      <div class="profile-section">
-        <img src="/frontend/img/Profile1.jpg" alt="User Profile Picture" class="profile-pic">
-        <h2 id="profile">User Profile</h2>
-        <div class="profile-info">
-          <p id="name"><strong>Name:</strong> John Doe</p>
-          <p id="email"><strong> Email:</strong> john@example.com</p>
-
-          <div class="Wallet">
-            <img src="/frontend/img/bitcoin.png" alt="bitcoin" id="bitcoin">
-            <p><strong>Bitcoin:</strong> 8000 BTC</p> 
-            <img src="/frontend/img/01_ckBTC_Token_HEX__4x.webp" alt="bitcoin" id="bitcoin">
-            <p><strong>ckBTC:</strong> 500 BTC </p>
-          </div>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Rewards Dashboard</h1>
+        <ul class="nav-menu">
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+          </li>
+          <li>
+            <a href="#rewards"><i class="fas fa-gift"></i> Rewards</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
+    </nav>
 
-      <div class="dashboard">
-          <div class="upper">
-            <p id="balance">balance: 5,000</p>
-          </div>
-          <div class="lower"></div>
-      </div>
-      
-    
->>>>>>> 52eed3a457e34a9c877686fcb20fe6a424e62cac
-    </div>
+    <!-- Content Section -->
+    <div class="content">
+      <!-- Left Section -->
+      <div class="left-section">
+        <img
+          src="/frontend/img/Profile1.jpg"
+          alt="Profile Image"
+          class="profile-pic"
+        />
+        <h1 id="profile-name">Esther</h1>
+        <p id="email"><strong>Email:</strong> john@example.com</p>
 
-    <!-- Token Balance Section -->
-    <!-- <div class="token-section">
-      <h2>Token Balances</h2>
-      <div class="token-balance">
-        <p><strong>ckBTC:</strong> 2.5 BTC</p>
-        <p><strong>ckETH:</strong> 1.2 ETH</p>
-        <p><strong>ICP:</strong> 100 ICP</p>
-      </div>
-    </div> -->
+        <div class="crypto-row">
+          <img src="/frontend/img/bitcoin.png" alt="Bitcoin" class="bit-icon" />
+          <p id="bitcoin"><strong>Bitcoin:</strong> 5000 BTU</p>
+        </div>
 
-    <!-- Rewards Status Section -->
-    <!-- <div class="rewards-section">
-      <h2>Reward Status</h2>
-      <div class="reward-item">
-        <p>Reward: 50 ICP</p>
-        <p>Status: <span class="status-received">Received</span></p>
-      </div>
-      <div class="reward-item">
-        <p>Reward: 0.5 ckBTC</p>
+        <div class="crypto-row">
+          <img
+            src="/frontend/img/01_ckBTC_Token_HEX__4x.webp"
+            alt="ckBTC"
+            class="ck-icon"
+          />
+          <p id="ckbtc"><strong>ckBTC:</strong> 100000 BTU</p>
+        </div>
+
+        <!-- User Profile Section -->
+        <div class="profile-section">
+          <h2 id="profile">User Profile</h2>
+        </div>
+
+        <!-- Token Balance Section -->
+        <h2>Reward Status</h2>
         <p>Status: <span class="status-pending">Pending</span></p>
       </div>
     </div>
-<<<<<<< HEAD
-  </div>
 
-
-  <!-- ส่วนที่ 3: สิ่งที่แลกได้ -->
-  <div class="reward-section">
-    <h3>What can be exchanged?</h3>
-    <div class="rewards">
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 1">
-        <p class="number-reward">Reward 1</p>
-        <p>1000 BTU</p>
-        <button type="button" id="button">exchange</button>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 2">
-        <p class="number-reward">Reward 2</p>
-        <p>1500 BTU</p>
-        <button type="button" id="button">exchange</button>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 3">
-        <p class="number-reward">Reward 3</p>
-        <p>2000 BTU</p>
-        <button type="button" id="button">exchange</button>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 4">
-        <p class="number-reward">Reward 4</p>
-        <p>2500 BTU</p>
-        <button type="button" id="button">exchange</button>
-      </div>
-      <div class="reward-item">
-        <img src="/frontend/img/rectangle_16012454.png" alt="Reward 5">
-        <p class="number-reward">Reward 5</p>
-        <p>3000 BTU</p>
-        <button type="button" id="button">exchange</button>
+    <!-- Rewards Section -->
+    <div class="reward-section">
+      <h3>What can be exchanged?</h3>
+      <div class="rewards">
+        <div class="reward-item">
+          <img src="/frontend/img/rectangle_16012454.png" alt="Reward 1" />
+          <p class="number-reward">Reward 1</p>
+          <p>1000 BTU</p>
+          <button type="button" id="button">Exchange</button>
+        </div>
+        <div class="reward-item">
+          <img src="/frontend/img/rectangle_16012454.png" alt="Reward 2" />
+          <p class="number-reward">Reward 2</p>
+          <p>1500 BTU</p>
+          <button type="button" id="button">Exchange</button>
+        </div>
+        <div class="reward-item">
+          <img src="/frontend/img/rectangle_16012454.png" alt="Reward 3" />
+          <p class="number-reward">Reward 3</p>
+          <p>2000 BTU</p>
+          <button type="button" id="button">Exchange</button>
+        </div>
+        <div class="reward-item">
+          <img src="/frontend/img/rectangle_16012454.png" alt="Reward 4" />
+          <p class="number-reward">Reward 4</p>
+          <p>2500 BTU</p>
+          <button type="button" id="button">Exchange</button>
+        </div>
+        <div class="reward-item">
+          <img src="/frontend/img/rectangle_16012454.png" alt="Reward 5" />
+          <p class="number-reward">Reward 5</p>
+          <p>3000 BTU</p>
+          <button type="button" id="button">Exchange</button>
+        </div>
+        <div class="reward-item">
+          <img src="/frontend/img/rectangle_16012454.png" alt="Reward 5" />
+          <p class="number-reward">Reward 6</p>
+          <p>2500 BTU</p>
+          <button type="button" id="button">Exchange</button>
+        </div>
+        <div class="reward-item">
+          <img src="/frontend/img/rectangle_16012454.png" alt="Reward 5" />
+          <p class="number-reward">Reward 7</p>
+          <p>3000 BTU</p>
+          <button type="button" id="button">Exchange</button>
+        </div>
       </div>
     </div>
-  </div>
-
 
     <script src="script.js"></script>
-=======
-  </div> -->
-  <script src="script.js"></script>
->>>>>>> 52eed3a457e34a9c877686fcb20fe6a424e62cac
-</body>
-
+  </body>
 </html>
